@@ -1,5 +1,4 @@
 <?php
-include 'share.php';
 
 $twitterObj = new CodetTwit();
 $gooleObj   = new Googlize();

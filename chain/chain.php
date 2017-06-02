@@ -1,18 +1,18 @@
 <?php
 class Chain
 {
-  private $_commands = array();
+  private $commands = array();
  
-  public function addCommand( $cmd )
+  public function addCommand( $command )
   {
-    $this->_commands []= $cmd;
+    $this->commands[]= $command;
   }
  
   public function runCommand( $name, $args )
   {
-    foreach( $this->_commands as $cmd )
+    foreach( $this->commands as $command )
     {
-      if ( $cmd->onCommand( $name, $args ) )
+      if ( $command->onCommand( $name, $args ) )
         return;
     }
   }

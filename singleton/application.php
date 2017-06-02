@@ -1,6 +1,4 @@
 <?php
-include 'user.php';
-
 $user1 = new user();
 $user2 = new user();
 

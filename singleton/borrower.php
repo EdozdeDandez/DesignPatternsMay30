@@ -1,6 +1,5 @@
 <?php
-include 'singleton.php';
-class MBorrower {
+class Borrower {
     private $borrowedMovie;
     private $haveMovie = FALSE;
 
